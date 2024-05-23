@@ -1,0 +1,12 @@
+<p>listas works!</p>
+<label for="tarea">Nombre de la tarea</label>
+<input id="tarea" type="text" [(ngModel)]="tarea.descripcion">
+<br>
+<input type="button" value="Guardar" (click)="guardar()">
+
+<ul>
+    @for (lis of listas; track lis.descripcion) {
+        <li>{{lis.descripcion}}</li>
+        <input type="button" value="eliminar" (click)="guardar()">
+    }
+</ul>
